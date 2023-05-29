@@ -183,6 +183,12 @@ h3 {
   flex-direction: column; */
 
   background-color: var(--navyblue);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/background/people-office.jpg);
+  background-size: cover;
 }
 
 .title-hero {
@@ -257,6 +263,13 @@ h3 {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
+.about-icon {
+  padding: 24px 100px;
+  border-radius: 4px;
+  background-color: var(--cloud);
+  margin-bottom: 8px;
+}
+
 .about-item:not(:nth-last-child(-n + 1)) {
   margin-right: 24px;
 }
@@ -307,6 +320,8 @@ h3 {
 
   background-color: var(--white);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .employee {
@@ -321,6 +336,65 @@ h3 {
 
 .team-text {
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--iris);
+}
+
+.social {
+  fill: var(--cloud);
+}
+
+/* SECTION 5  CUSTOMERS*/
+
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers-title {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customers-list-item {
+  display: flex;
+}
+
+.customers-list-link {
+  display: flex;
+}
+
+.customers-img {
+  width: 168px;
+  height: 88px;
+  padding: 16px 32px;
+  object-fit: none;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  fill: var(--liteslate);
 }
 
 /* FOOTER */
@@ -358,6 +432,31 @@ h3 {
   color: var(--cloud);
 }
 
+.footer-cont {
+  display: flex;
+}
+
+.footer-social-text {
+  margin-bottom: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.footer-div:not(:last-child) {
+  margin-right: 120px;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+
+/* .list-item:not(:last-child) {  margin-bottom: 12px;} */
+
 /* PORTFOLIO */
 
 .portfolio-filter {
@@ -392,6 +491,8 @@ h3 {
   color: var(--white);
   background-color: var(--ocean);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
