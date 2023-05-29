@@ -406,7 +406,7 @@ h3 {
   object-fit: none;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  fill: var(--liteslate);
+  color: var(--liteslate);
 }
 
 .customers-list-link:hover,
