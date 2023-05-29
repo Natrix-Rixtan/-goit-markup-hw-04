@@ -12,6 +12,7 @@
   --cloud: #f4f4fd;
   --white: #ffffff;
   --ocean: #404bbf;
+  --green: #31d0aa;
 }
 
 body {
@@ -85,6 +86,8 @@ h3 {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-div {
@@ -179,8 +182,9 @@ h3 {
 .hero {
   padding-top: 188px;
   padding-bottom: 188px;
-  /* display: flex;
-  flex-direction: column; */
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: var(--navyblue);
   background-image: linear-gradient(
@@ -189,6 +193,8 @@ h3 {
     ),
     url(../images/background/people-office.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .title-hero {
@@ -264,6 +270,10 @@ h3 {
 }
 
 .about-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
   padding: 24px 100px;
   border-radius: 4px;
   background-color: var(--cloud);
@@ -341,21 +351,24 @@ h3 {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+  gap: 24px;
+  justify-content: center;
 }
 
-.social-list-link {
+.social-list-link,
+.footer-social-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  background-color: var(--iris);
 }
 
 .social-list-link:hover,
 .social-list-link:focus {
-  background-color: var(--iris);
+  background-color: var(--ocean);
 }
 
 .social {
@@ -376,7 +389,7 @@ h3 {
 
 .customers-list {
   display: flex;
-  justify-content: space-between;
+  gap: 24px;
 }
 
 .customers-list-item {
@@ -385,16 +398,25 @@ h3 {
 
 .customers-list-link {
   display: flex;
-}
-
-.customers-img {
   width: 168px;
   height: 88px;
   padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
   object-fit: none;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   fill: var(--liteslate);
+}
+
+.customers-list-link:hover,
+.customers-list-link:focus {
+  border-color: var(--ocean);
+  color: var(--ocean);
+}
+
+.customers-img {
+  fill: currentColor;
 }
 
 /* FOOTER */
@@ -434,6 +456,7 @@ h3 {
 
 .footer-cont {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-social-text {
@@ -453,6 +476,11 @@ h3 {
 .footer-social-list {
   display: flex;
   gap: 16px;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--green);
 }
 
 /* .list-item:not(:last-child) {  margin-bottom: 12px;} */
