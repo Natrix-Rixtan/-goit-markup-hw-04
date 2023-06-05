@@ -355,15 +355,22 @@ h3 {
   justify-content: center;
 }
 
+.social-list-item {
+  display: flex;
+  align-items: stretch;
+  width: 40px;
+  height: 40px;
+}
+
 .social-list-link,
 .footer-social-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 100%;
   border-radius: 50%;
   background-color: var(--iris);
+  color: var(--cloud);
 }
 
 .social-list-link:hover,
@@ -372,7 +379,12 @@ h3 {
 }
 
 .social {
-  fill: var(--cloud);
+  fill: currentColor;
+}
+
+.employee-social {
+  width: 16px;
+  height: 16px;
 }
 
 /* SECTION 5  CUSTOMERS*/
@@ -394,12 +406,14 @@ h3 {
 
 .customers-list-item {
   display: flex;
+  width: 168px;
+  height: 88px;
 }
 
 .customers-list-link {
+  width: 100%;
   display: flex;
-  width: 168px;
-  height: 88px;
+
   padding: 16px 32px;
   align-items: center;
   justify-content: center;
@@ -416,6 +430,8 @@ h3 {
 }
 
 .customers-img {
+  width: 104px;
+  height: 56px;
   fill: currentColor;
 }
 
@@ -481,6 +497,11 @@ h3 {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--green);
+}
+
+.footer-social {
+  width: 24px;
+  height: 24px;
 }
 
 /* .list-item:not(:last-child) {  margin-bottom: 12px;} */
